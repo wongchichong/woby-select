@@ -2,7 +2,7 @@
 
 ## Description   
 
-Port from [multiselect-react-dropdown](https://github.com/srigar/multiselect-react-dropdown)
+Ported from [multiselect-react-dropdown](https://github.com/srigar/multiselect-react-dropdown)
 
 A woby component which provides multi select functionality with various features like selection limit, CSS customization, checkbox, search option, disable preselected values, flat array, keyboard navigation for accessibility and grouping features. Also it has feature to behave like normal dropdown(means single select dropdown).
 
