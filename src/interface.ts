@@ -1,0 +1,47 @@
+import { Observable, ObservableMaybe, type JSX } from 'woby'
+
+
+export interface SelectProps {
+    options: ObservableMaybe<any>,
+    disablePreSelectedValues?: ObservableMaybe<boolean>,
+    selectedValues?: Observable<any>,
+    isObject?: ObservableMaybe<boolean>,
+    displayValue?: ObservableMaybe<string>,
+    showCheckbox?: ObservableMaybe<boolean>,
+    selectionLimit?: ObservableMaybe<any>,
+    placeholder?: ObservableMaybe<string>,
+    groupBy?: ObservableMaybe<string>,
+    loading?: ObservableMaybe<boolean>,
+    style?: ObservableMaybe<{
+        optionContainer?: ObservableMaybe<JSX.Style>, loadingMessage?: ObservableMaybe<JSX.Style>,
+        notFound?: ObservableMaybe<JSX.Style>, groupHeading?: ObservableMaybe<JSX.Style>, option?: ObservableMaybe<JSX.Style>,
+        chips?: ObservableMaybe<JSX.Style>, multiselectContainer?: ObservableMaybe<JSX.Style>, searchBox?: ObservableMaybe<JSX.Style>, inputField?: ObservableMaybe<JSX.Style>,
+    }>,
+    classes?: ObservableMaybe<{
+        optionContainer?: ObservableMaybe<JSX.Class>, loadingMessage?: ObservableMaybe<JSX.Class>,
+        notFound?: ObservableMaybe<JSX.Class>, groupHeading?: ObservableMaybe<JSX.Class>, option?: ObservableMaybe<JSX.Class>,
+        chips?: ObservableMaybe<JSX.Class>, multiselectContainer?: ObservableMaybe<JSX.Class>, searchBox?: ObservableMaybe<JSX.Class>, inputField?: ObservableMaybe<JSX.Class>,
+    }>,
+    emptyRecordMsg?: ObservableMaybe<string>,
+    onSelect?: (selectedList: any, selectedItem: any) => void,
+    onRemove?: (selectedList: any, selectedItem: any) => void,
+    onSearch?: (value: string) => void,
+    onKeyPressFn?: (event: any, value: string) => void,
+    closeIcon?: ObservableMaybe<string>,
+    singleSelect?: ObservableMaybe<boolean>,
+    caseSensitiveSearch?: ObservableMaybe<boolean>,
+    id?: string,
+    closeOnSelect?: ObservableMaybe<boolean>,
+    avoidHighlightFirstOption?: ObservableMaybe<boolean>,
+    hidePlaceholder?: ObservableMaybe<boolean>,
+    showArrow?: ObservableMaybe<boolean>,
+    keepSearchTerm?: ObservableMaybe<boolean>,
+    customCloseIcon?: ObservableMaybe<JSX.Child | string>,
+    customArrow?: ObservableMaybe<any>,
+    disable?: ObservableMaybe<boolean>,
+    className?: ObservableMaybe<string>,
+    selectedValueDecorator?: (v: string, option: any) => JSX.Child | string,
+    optionValueDecorator?: (v: string, option: any) => JSX.Child | string,
+    hideSelectedList?: ObservableMaybe<boolean>,
+    loadingMessage?: ObservableMaybe<string>
+}

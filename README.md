@@ -1,16 +1,8 @@
-# REACT MULTISELECT DROPDOWN 
-
-[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://multiselect-react-dropdown.vercel.app/?path=/docs/multiselect-dropdown--flat-array)
-![Version](https://img.shields.io/npm/v/multiselect-react-dropdown.svg) 
-![Downloads](https://img.shields.io/npm/dw/multiselect-react-dropdown.svg) 
-![License](https://img.shields.io/npm/l/multiselect-react-dropdown.svg) 
-[![gzip](https://badgen.net/bundlephobia/minzip/multiselect-react-dropdown@2.0.1)](https://bundlephobia.com/result?p=multiselect-react-dropdown@2.0.1)
-![Tweet](https://img.shields.io/twitter/url/https/twitter.com/ssrigar.svg?style=social)
-
-💥💥💥 **React Library for Component Lazyloading. Tiny and Efficient. [Check it Out](https://github.com/srigar/react-lazyloading)** 💥💥💥
-
+# WOBY MULTISELECT DROPDOWN 
 
 ## Description   
+
+Port from [multiselect-react-dropdown](https://github.com/srigar/multiselect-react-dropdown)
 
 A React component which provides multi select functionality with various features like selection limit, CSS customization, checkbox, search option, disable preselected values, flat array, keyboard navigation for accessibility and grouping features. Also it has feature to behave like normal dropdown(means single select dropdown).
 
@@ -28,18 +20,18 @@ A React component which provides multi select functionality with various feature
 
 ## 1. Installation 🔧
 ```
-npm install multiselect-react-dropdown  
+npm install multiselect-voby-dropdown  
 
-yarn add multiselect-react-dropdown
+yarn add multiselect-voby-dropdown
 ```
 ----
 ## 2. Demo 👁️
-[React-multi-select-dropdown](https://multiselect-react-dropdown.vercel.app/?path=/docs/multiselect-dropdown--flat-array)
+[React-multi-select-dropdown](https://multiselect-voby-dropdown.vercel.app/?path=/docs/multiselect-dropdown--flat-array)
 
 ----
 ## 3. Basic Usage 📑
 ```js
-import Multiselect from 'multiselect-react-dropdown';
+import Multiselect from 'multiselect-voby-dropdown';
 
 this.state = {
     options: [{name: 'Option 1️⃣', id: 1},{name: 'Option 2️⃣', id: 2}]
@@ -96,7 +88,7 @@ onRemove(selectedList, removedItem) {
 | `showArrow` | `bool` | `false` | For multiselect dropdown by default arrow wont show at the end, If required based on flag we can display
 | `customArrow` | `any` | `undefined` | For multiselect dropdown custom arrow option
 | `keepSearchTerm` | `bool` | `false` | Whether or not to keep the search value after selecting or removing an item
-| `customCloseIcon` | `ReactNode or string` | `undefined` | Custom close icon and can be string or react component(Check demo for reference)
+| `customCloseIcon` | `ReactNode or string` | `undefined` | Custom close icon and can be string or voby component(Check demo for reference)
 | `selectedValueDecorator` | `(string) => ReactNode \| string` | `v => v` | A function that can be used to modify the representation selected value
 | `optionValueDecorator` | `(string) => string` | `v => v` | A function that can be used to modify the representation the available options
 ----
