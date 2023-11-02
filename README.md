@@ -4,7 +4,7 @@
 
 Port from [multiselect-react-dropdown](https://github.com/srigar/multiselect-react-dropdown)
 
-A React component which provides multi select functionality with various features like selection limit, CSS customization, checkbox, search option, disable preselected values, flat array, keyboard navigation for accessibility and grouping features. Also it has feature to behave like normal dropdown(means single select dropdown).
+A woby component which provides multi select functionality with various features like selection limit, CSS customization, checkbox, search option, disable preselected values, flat array, keyboard navigation for accessibility and grouping features. Also it has feature to behave like normal dropdown(means single select dropdown).
 
 ![Multiselect](images/dd.png)
 
@@ -20,18 +20,21 @@ A React component which provides multi select functionality with various feature
 
 ## 1. Installation 🔧
 ```
-npm install multiselect-voby-dropdown  
+pnpm install woby-select  
 
-yarn add multiselect-voby-dropdown
+pnpm add woby-select
 ```
 ----
 ## 2. Demo 👁️
-[React-multi-select-dropdown](https://multiselect-voby-dropdown.vercel.app/?path=/docs/multiselect-dropdown--flat-array)
+
+```
+pnpm dev
+```
 
 ----
 ## 3. Basic Usage 📑
 ```js
-import Multiselect from 'multiselect-voby-dropdown';
+import Multiselect from 'woby-select';
 
 this.state = {
     options: [{name: 'Option 1️⃣', id: 1},{name: 'Option 2️⃣', id: 2}]
