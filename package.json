@@ -1,6 +1,6 @@
 {
     "name": "woby-select",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "woby select component with search and various features",
     "main": "./dist/index.cjs.js",
     "module": "./dist/index.es.js",
@@ -29,9 +29,9 @@
         "url": ""
     },
     "peerDependencies": {
-        "use-woby": "workspace:../use-woby",
-        "woby": "workspace:../woby",
-        "woby-styled": "workspace:../woby-styled"
+        "use-woby": "workspace:^",
+        "woby": "workspace:^",
+        "woby-styled": "workspace:^"
     },
     "devDependencies": {
         "tailwindcss": "^3.4.1",
